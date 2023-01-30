@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>BIN File Reader</title>
   <script>
-    function sendBinFile() {
-    
-        const { spawn } = require('child_process');
-
-        const binFilePath = 'path/to/your/binFile.bin';
-        
-        const pythonProcess = spawn('python', ['editor/StellaGlow/bin2Json.py', binFilePath]);
-        
-        pythonProcess.stdout.on('data', (data) => {
-          console.log(`stdout: ${data}`);
-        });
-        
-        pythonProcess.stderr.on('data', (data) => {
-          console.error(`stderr: ${data}`);
-        });
-        
-        pythonProcess.on('close', (code) => {
-          console.log(`child process exited with code ${code}`);
-        });
-        
-      
+    function readFile(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          var data = e.target.result;
+          document.getElementById("binData").textContent = data;
+        };
+        reader.readAsBinaryString(input.files[0]);
+      }
     }
   </script>
 </head>
 <body>
-  <input type="file" id="binFile" accept=".bin"  onchange="sendBinFile()"/>
- 
+  <input type="file" onchange="readFile(this)">
+  <br><br>
+  <textarea id="binData" readonly></textarea>
 </body>
 </html>
