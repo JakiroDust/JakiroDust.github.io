@@ -22,22 +22,61 @@
         reader.readAsBinaryString(input.files[0]);
       } 
     };
-    function createTextbox(id,input="20%")
+
+    function createTextbox(id,input="5%")
     {
       let cb= document.createElement("input");
-      cb.style.width = "50%";
+      cb.style.width = input;
       cb.style.height = "60%";
       cb.id=id;
+      cb.innerText="0"
       return cb;
     };
-    function createCombobox(id,input="20%")
+    function loadComboboxOptions(combobox, file) {
+      var xhr = new XMLHttpRequest();
+      var start_with=1;
+      xhr.open("GET", file, true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var lines = xhr.responseText.split("\n");
+          var firstLine = lines[0].trim();
+          for (var i = 1; i < lines.length; i++) {
+            if (lines[i].length > 0) {
+              var option = document.createElement("option");
+              if (firstLine === "1") {
+                option.value = lines[i].substring(0, 2);
+                start_with=3;
+              } else if (firstLine === "2") {
+                option.value = lines[i].substring(0, 4);
+                start_with = 5;
+              }
+              option.text = lines[i].substring(start_with);
+              if(option.value=='XXXX' || option.value=='XX')
+              {
+                option.disabled="true";
+              }
+              combobox.add(option);
+            }
+          }
+        }
+      };
+      xhr.send();
+    }
+    
+    function createCombobox(id,filepath="none",input="10%")
     {
+
      let cb= document.createElement("select");
-     cb.style.width = "50%";
-     cb.style.height = "60%";
+     cb.style.width = input;
+     cb.style.height = "10%";
      cb.id=id;
+     if (filepath != "none")
+     {
+      loadComboboxOptions(cb,filepath)
+     }
      return cb;
     };
+
     function createLabel(input_string="default")
     {
      let label= document.createElement("label");
@@ -46,15 +85,53 @@
      return label
     };
 
+    function createInfobox(){
+        // Create the main container
+  var container = document.createElement("div");
+  container.style.display = "flex";
+  //container.style.flexDirection="column";
+  container.style.alignItems = "center";
+  container.style.justifyContent = "space-between";
+  container.style.width = "30%";
+  container.style.height = "100%";
+  container.style.border = "1px solid black";
+  container.id= "box"+0
+  container.className="box"
+  container.style.padding="10px"
+  //Create Label
+  var MoneyLabel=createLabel("Money")
+  var NGlabel=createLabel("NG")
+  var OrbChangeLabel=createLabel("Orb change when select wp")
+  //Make obj
+  var MoneyText=createTextbox("Money","20%")
+  //
+  var NGTickbox=document.createElement("input")
+  NGTickbox.type="checkbox"
+  NGTickbox.id="NG"
+  //
+  var OrbTickbox=document.createElement("input")
+  OrbTickbox.type="checkbox"
+  OrbTickbox.checked=true
+  OrbTickbox.id="Orb"
+  container.append(MoneyLabel)
+  container.append(MoneyText)
+  container.append(NGlabel)
+  container.append(NGTickbox)
+  container.append(OrbChangeLabel)
+  container.append(OrbTickbox)
+  document.body.appendChild(container);
+
+    };
+
     function createBox(number)
     {
   // Create the main container
   var container = document.createElement("div");
   container.style.display = "flex";
-  container.style.flexDirection="column";
+  //container.style.flexDirection="column";
   container.style.alignItems = "center";
   container.style.justifyContent = "space-between";
-  container.style.width = "300px";
+  container.style.width = "98%";
   container.style.height = "100%";
   container.style.border = "1px solid black";
   container.id= "box"+number
@@ -75,17 +152,17 @@
 
 
   // Create the second combobox
-  var StatusCombobox = createCombobox('StatusCombobox')
+  var StatusCombobox = createCombobox('StatusCombobox',"./resources/id/SG_Characters.txt")
   var ExpText=createTextbox('ExpText')
-  var LevelText=createTextbox('LevelText')
-  var WeaponCombobox =createCombobox("WeaponCombobox")
-  var ArmorCombobox = createCombobox("ArmorCombobox")
-  var AccCombobox=createCombobox("AccCombobox")
-  var Orb1Combobox = createCombobox("Orb1Combobox")
-  var Orb2Combobox = createCombobox("Orb2Combobox")
-  var Orb3Combobox = createCombobox("Orb3Combobox")
-  var Orb4Combobox = createCombobox("Orb4Combobox")
-  var Orb5Combobox = createCombobox("Orb5Combobox")
+  var LevelText=createTextbox('LevelText',)
+  var WeaponCombobox =createCombobox("WeaponCombobox","./resources/id/Weapons.txt")
+  var ArmorCombobox = createCombobox("ArmorCombobox","./resources/id/Armor.txt")
+  var AccCombobox=createCombobox("AccCombobox","./resources/id/Accessories.txt")
+  var Orb1Combobox = createCombobox("Orb1Combobox","./resources/id/Orbs.txt","5%")
+  var Orb2Combobox = createCombobox("Orb2Combobox","./resources/id/Orbs.txt","5%")
+  var Orb3Combobox = createCombobox("Orb3Combobox","./resources/id/Orbs.txt","5%")
+  var Orb4Combobox = createCombobox("Orb4Combobox","./resources/id/Orbs.txt","5%")
+  var Orb5Combobox = createCombobox("Orb5Combobox","./resources/id/Orbs.txt","5%")
   // Append the comboboxes to the main container
   container.appendChild(StatusLabel);
   container.appendChild(StatusCombobox);
@@ -107,6 +184,7 @@
   container.appendChild(Orb5Combobox);
   // Append the main container to the body
   document.body.appendChild(container);
+  return container;
     }
   </script>
   <style>
@@ -130,8 +208,12 @@
 <body>
   <input type="file" onchange="readFile(this)">
     <script>
-      createBox(1)
-      createBox(2)
+    createInfobox();
+    for (i =0;i<14;i++)
+    {
+      var temp =createBox(i)
+    }
+    
     </script>
 </body>
 </html>

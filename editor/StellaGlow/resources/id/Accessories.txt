@@ -1,70 +1,72 @@
-FC 08 - Attack Ring
-FD 08 - Attack Ring 2 
-FE 08 - Attack Ring 3
-FF 08 - Guard Ring
-00 09 - Guard Ring 2
-01 09 - Guard Ring 3
-02 09 - Magic Ring
-03 09 - Magic Ring 2
-04 09 - Magic Ring 3
-05 09 - [Unnamed] (MDEF +2)
-06 09 - [Unnamed] (MDEF +5)
-07 09 - [Unnamed] (MDEF +10)
-08 09 - [Unnamed] (AGI +2)
-09 09 - [Unnamed] (AGI +5)
-0A 09 - [Unnamed] (AGI +10)
-0B 09 - Power Stone
-0C 09 - Power Stone 2
-0D 09 - Tough Ring
-0E 09 - Tough Ring 2
-0F 09 - Mental Ring
-10 09 - Mental Ring 2
-11 09 - Mobile Ring
-12 09 - Mobile Ring 2
-13 09 - Physical Ring
-14 09 - Physical Ring 2
-15 09 - Physical Ring 3
-16 09 - [Unnamed]
-17 09 - Ail Guard
-18 09 - Ail Guard 2
-19 09 - Ail Guard 3
-1A 09 - Down Guard
-1B 09 - Down Guard 2
-1C 09 - Down Guard 3
-1D 09 - Stop Guard
-1E 09 - Stop Guard 2
-1F 09 - Stop Guard 3
-20 09 - Tough Ring 3
-21 09 - Mental Ring 3
-22 09 - King's Guard
-23 09 - Fire Guard
-24 09 - Aqua Guard
-25 09 - Aero Guard
-26 09 - Earth Guard
-27 09 - Portal Ring
-28 09 - Hercules Boots
-29 09 - [Unnamed]
-2A 09 - Life Gain
-2B 09 - Soul Gain
-2C 09 - EXP boost
-2D 09 - [Unnamed]
-2E 09 - [Unnamed]
-2F 09 - Hunter's Broock
-30 09 - Floral Kerchief
-31 09 - Shameful Past
-32 09 - Fantasy Trip
-33 09 - Oil Absorber 
-34 09 - Alto Doll
-35 09 - Lady's Card
-36 09 - Panties
-37 09 - Angel Halo
-38 09 - Priestess Photo
-39 09 - Ewan Inc. Card
-3A 09 - Wing Strap
-3B 09 - Replica Kingdom
-3C 09 - Recipe Book
-3D 09 - Hilda's Statue
-3E 09 - Dessert Statue
-3F 09 - Chicken Ring
-40 09 - [Unnamed]
-41 09 - Healing Ring
+2
+0000-nothing
+FC08-AttackRing
+FD08-AttackRing2
+FE08-AttackRing3
+FF08-GuardRing
+0009-GuardRing2
+0109-GuardRing3
+0209-MagicRing
+0309-MagicRing2
+0409-MagicRing3
+0509-[Unnamed](MDEF+2)
+0609-[Unnamed](MDEF+5)
+0709-[Unnamed](MDEF+10)
+0809-[Unnamed](AGI+2)
+0909-[Unnamed](AGI+5)
+0A09-[Unnamed](AGI+10)
+0B09-PowerStone
+0C09-PowerStone2
+0D09-ToughRing
+0E09-ToughRing2
+0F09-MentalRing
+1009-MentalRing2
+1109-MobileRing
+1209-MobileRing2
+1309-PhysicalRing
+1409-PhysicalRing2
+1509-PhysicalRing3
+1609-[Unnamed]
+1709-AilGuard
+1809-AilGuard2
+1909-AilGuard3
+1A09-DownGuard
+1B09-DownGuard2
+1C09-DownGuard3
+1D09-StopGuard
+1E09-StopGuard2
+1F09-StopGuard3
+2009-ToughRing3
+2109-MentalRing3
+2209-King'sGuard
+2309-FireGuard
+2409-AquaGuard
+2509-AeroGuard
+2609-EarthGuard
+2709-PortalRing
+2809-HerculesBoots
+2909-[Unnamed]
+2A09-LifeGain
+2B09-SoulGain
+2C09-EXPboost
+2D09-[Unnamed]
+2E09-[Unnamed]
+2F09-Hunter'sBroock
+3009-FloralKerchief
+3109-ShamefulPast
+3209-FantasyTrip
+3309-OilAbsorber
+3409-AltoDoll
+3509-Lady'sCard
+3609-Panties
+3709-AngelHalo
+3809-PriestessPhoto
+3909-EwanInc.Card
+3A09-WingStrap
+3B09-ReplicaKingdom
+3C09-RecipeBook
+3D09-Hilda'sStatue
+3E09-DessertStatue
+3F09-ChickenRing
+4009-[Unnamed]
+4109-HealingRing

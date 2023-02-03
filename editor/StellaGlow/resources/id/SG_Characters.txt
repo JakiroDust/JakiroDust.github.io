@@ -1,24 +1,26 @@
-01 - Alto (Villager)
-02 - Alto (Knight)
-03 - Alto (Conductor)
-0B - Lisette (Villager)
-0C - Lisette (Witch)
-0D - Lisette (Goddess)
-97 - Klaus
-3D - Rusty
-5B - Archibald
-65 - Ewan
-1F - Popo (Witch)
-20 - Popo (Goddess)
-47 - Nonoka
-29 - Sakuya (Witch)
-2A - Sakuya (Goddess)
-79 - Keith
-33 - Mordimort (Witch)
-34 - Mordimort (Goddess)
-8D - Dorothy
-83 - Dante
-15 - Hilda (Witch)
-16 - Hilda (Goddess)
-6F - Veronica
-51 - Giselle
+1
+00-nothing
+01-Alto(Villager)
+02-Alto(Knight)
+03-Alto(Conductor)
+0B-Lisette(Villager)
+0C-Lisette(Witch)
+0D-Lisette(Goddess)
+97-Klaus
+3D-Rusty
+5B-Archibald
+65-Ewan
+1F-Popo(Witch)
+20-Popo(Goddess)
+47-Nonoka
+29-Sakuya(Witch)
+2A-Sakuya(Goddess)
+79-Keith
+33-Mordimort(Witch)
+34-Mordimort(Goddess)
+8D-Dorothy
+83-Dante
+15-Hilda(Witch)
+16-Hilda(Goddess)
+6F-Veronica
+51-Giselle

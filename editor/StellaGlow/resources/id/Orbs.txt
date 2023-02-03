@@ -1,103 +1,105 @@
-28 0A - Weak Orb
-29 0A - Weak Orb 2
-2A 0A - Soft Orb
-2B 0A - Soft Orb 2
-2C 0A - Immobile Orb
-2D 0A - Immobile Orb 2
-2E 0A - Slow Orb
-2F 0A - Slow Orb 2
-30 0A - Venom Orb
-31 0A - Venom Orb 2
-32 0A - Burn Orb
-33 0A - Burn Orb 2
-34 0A - [Unnamed]
-35 0A - [Unnamed]
-36 0A - Charm Orb
-37 0A - Sleep Orb 3
-38 0A - Paralyze Orb
-39 0A - Paralyze Orb 2
-3A 0A - Sleep Orb 
-3B 0A - Sleep Orb 2
-3C 0A - Stun Orb
-3D 0A - Stun Orb 2
-3E 0A - Freeze Orb
-3F 0A - Freeze Orb 2
-40 0A - Stop Orb
-41 0A - Stop Orb 2
-42 0A - Blind Orb
-43 0A - Blind Orb 2
-44 0A - Heavy Orb
-45 0A - Heavy Orb 2
-46 0A - Seal Orb
-47 0A - Seal Orb 2
-48 0A - Death Orb
-49 0A - [Unnamed]
-4A 0A - Sickness Orb
-4B 0A - Sickness Orb 2
-4C 0A - Blast Orb
-4D 0A - [Unnamed]
-4E 0A - Sickness Orb 3
-4F 0A - Drain Orb
-50 0A - Drain Orb 2
-51 0A - Drain Orb 3
-52 0A - Absorb Orb
-53 0A - Absorb Orb 2
-54 0A - Absorb Orb 3
-55 0A - Delay Orb
-56 0A - Delay Orb 2 
-57 0A - Delay Orb 3
-58 0A - [Unnamed]
-59 0A - Dispel Orb
-5A 0A - Dispel Orb 2
-5B 0A - Thief Orb
-5C 0A - Thief Orb 2 
-5D 0A - Thief Orb 3
-5E 0A - [Unnamed]
-5F 0A - Flame Orb
-60 0A - River Orb
-61 0A - Storm Orb
-62 0A - Mud Orb
-63 0A - Luck Orb
-64 0A - Luck Orb 2
-65 0A - Assassin Orb
-66 0A - Assassin Orb 2
-67 0A - Hermit Orb
-68 0A - Hermit Orb 2
-69 0A - Song Orb 3
-6A 0A - Giant Orb 2
-6B 0A - Hit Orb
-6C 0A - Hit Orb 2
-6D 0A - Song Orb
-6E 0A - Greed Orb
-6F 0A - Greed Orb 2
-70 0A - Aim Orb
-71 0A - Aim Orb 2
-72 0A - Aim Orb 3
-73 0A - Attack Orb
-74 0A - Attack Orb 2
-75 0A - Attack Orb 3
-76 0A - Chase Orb 
-77 0A - Chase Orb 2
-78 0A - Chase Orb 3
-79 0A - Critical Orb 
-7A 0A - Critical Orb 2
-7B 0A - Critical Orb 3
-7C 0A - Desperate Orb 
-7D 0A - Desperate Orb 2
-7E 0A - Corner Orb 
-7F 0A - Corner Orb 2
-80 0A - Hunter Orb 
-81 0A - Giant Orb 
-82 0A - Song Orb 2
-83 0A - Misery Orb 
-84 0A - Ally Orb 
-85 0A - Lone Orb 
-86 0A - Hunter Orb 2
-87 0A - Desperate Orb 3
-88 0A - Quick Orb 
-89 0A - Quick Orb 2
-8A 0A - Follow Up Orb
-8B 0A - Angle Orb
-8C 0A - Rena's Orb
-8D 0A - Drive Orb
-8E 0A - Solid Orb
+2
+0000-nothing
+280A-Weak Orb
+290A-Weak Orb 2
+2A0A-Soft Orb
+2B0A-Soft Orb 2
+2C0A-Immobile Orb
+2D0A-Immobile Orb 2
+2E0A-Slow Orb
+2F0A-Slow Orb 2
+300A-Venom Orb
+310A-Venom Orb 2
+320A-Burn Orb
+330A-Burn Orb 2
+340A-[Unnamed]
+350A-[Unnamed]
+360A-Charm Orb
+370A-Sleep Orb 3
+380A-Paralyze Orb
+390A-Paralyze Orb 2
+3A0A-Sleep Orb 
+3B0A-Sleep Orb 2
+3C0A-Stun Orb
+3D0A-Stun Orb 2
+3E0A-Freeze Orb
+3F0A-Freeze Orb 2
+400A-Stop Orb
+410A-Stop Orb 2
+420A-Blind Orb
+430A-Blind Orb 2
+440A-Heavy Orb
+450A-Heavy Orb 2
+460A-Seal Orb
+470A-Seal Orb 2
+480A-Death Orb
+490A-[Unnamed]
+4A0A-Sickness Orb
+4B0A-Sickness Orb 2
+4C0A-Blast Orb
+4D0A-[Unnamed]
+4E0A-Sickness Orb 3
+4F0A-Drain Orb
+500A-Drain Orb 2
+510A-Drain Orb 3
+520A-Absorb Orb
+530A-Absorb Orb 2
+540A-Absorb Orb 3
+550A-Delay Orb
+560A-Delay Orb 2 
+570A-Delay Orb 3
+580A-[Unnamed]
+590A-Dispel Orb
+5A0A-Dispel Orb 2
+5B0A-Thief Orb
+5C0A-Thief Orb 2 
+5D0A-Thief Orb 3
+5E0A-[Unnamed]
+5F0A-Flame Orb
+600A-River Orb
+610A-Storm Orb
+620A-Mud Orb
+630A-Luck Orb
+640A-Luck Orb 2
+650A-Assassin Orb
+660A-Assassin Orb 2
+670A-Hermit Orb
+680A-Hermit Orb 2
+690A-Song Orb 3
+6A0A-Giant Orb 2
+6B0A-Hit Orb
+6C0A-Hit Orb 2
+6D0A-Song Orb
+6E0A-Greed Orb
+6F0A-Greed Orb 2
+700A-Aim Orb
+710A-Aim Orb 2
+720A-Aim Orb 3
+730A-Attack Orb
+740A-Attack Orb 2
+750A-Attack Orb 3
+760A-Chase Orb 
+770A-Chase Orb 2
+780A-Chase Orb 3
+790A-Critical Orb 
+7A0A-Critical Orb 2
+7B0A-Critical Orb 3
+7C0A-Desperate Orb 
+7D0A-Desperate Orb 2
+7E0A-Corner Orb 
+7F0A-Corner Orb 2
+800A-Hunter Orb 
+810A-Giant Orb 
+820A-Song Orb 2
+830A-Misery Orb 
+840A-Ally Orb 
+850A-Lone Orb 
+860A-Hunter Orb 2
+870A-Desperate Orb 3
+880A-Quick Orb 
+890A-Quick Orb 2
+8A0A-Follow Up Orb
+8B0A-Angle Orb
+8C0A-Rena's Orb
+8D0A-Drive Orb
+8E0A-Solid Orb
