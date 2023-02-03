@@ -2,22 +2,136 @@
 <html>
 <head>
   <title>BIN File Reader</title>
+
+<script>
+  var bin2Dict,data
+</script>
+  <script type="module">
+    import {handleFileSelect } from "./bin2Dict.js";
+    bin2Dict=handleFileSelect
+  </script>
   <script>
     function readFile(input) {
-      if (input.files && input.files[0]) {
+
+      if (input.files && input.files[0]) 
+      {
         var reader = new FileReader();
         reader.onload = function (e) {
-          var data = e.target.result;
-          document.getElementById("binData").textContent = data;
+          var data = bin2Dict(e.target.result);
         };
         reader.readAsBinaryString(input.files[0]);
-      }
+      } 
+    };
+    function createTextbox(id,input="20%")
+    {
+      let cb= document.createElement("input");
+      cb.style.width = "50%";
+      cb.style.height = "60%";
+      cb.id=id;
+      return cb;
+    };
+    function createCombobox(id,input="20%")
+    {
+     let cb= document.createElement("select");
+     cb.style.width = "50%";
+     cb.style.height = "60%";
+     cb.id=id;
+     return cb;
+    };
+    function createLabel(input_string="default")
+    {
+     let label= document.createElement("label");
+     label.innerText=input_string;
+     label.style.marginRight="1px";
+     return label
+    };
+
+    function createBox(number)
+    {
+  // Create the main container
+  var container = document.createElement("div");
+  container.style.display = "flex";
+  container.style.flexDirection="column";
+  container.style.alignItems = "center";
+  container.style.justifyContent = "space-between";
+  container.style.width = "300px";
+  container.style.height = "100%";
+  container.style.border = "1px solid black";
+  container.id= "box"+number
+  container.className="box"
+  container.style.padding="10px"
+
+  // Create the first combobox
+
+  
+  var StatusLabel=createLabel("Status")
+  var LevelLabel=createLabel("Level")
+  var ExpLabel=createLabel("Exp")
+  var WeaponLabel=createLabel("Weapon")
+  var ArmorLabel=createLabel("Armor")
+  var AccLabel=createLabel("Acc")
+  var OrbLabel=createLabel("orb")
+
+
+
+  // Create the second combobox
+  var StatusCombobox = createCombobox('StatusCombobox')
+  var ExpText=createTextbox('ExpText')
+  var LevelText=createTextbox('LevelText')
+  var WeaponCombobox =createCombobox("WeaponCombobox")
+  var ArmorCombobox = createCombobox("ArmorCombobox")
+  var AccCombobox=createCombobox("AccCombobox")
+  var Orb1Combobox = createCombobox("Orb1Combobox")
+  var Orb2Combobox = createCombobox("Orb2Combobox")
+  var Orb3Combobox = createCombobox("Orb3Combobox")
+  var Orb4Combobox = createCombobox("Orb4Combobox")
+  var Orb5Combobox = createCombobox("Orb5Combobox")
+  // Append the comboboxes to the main container
+  container.appendChild(StatusLabel);
+  container.appendChild(StatusCombobox);
+  container.appendChild(LevelLabel);
+  container.appendChild(LevelText);
+  //container.appendChild(ExpLabel)
+ // container.appendChild(ExpText);
+  container.appendChild(WeaponLabel);
+  container.appendChild(WeaponCombobox);
+  container.appendChild(ArmorLabel);
+  container.appendChild(ArmorCombobox);
+  container.appendChild(AccLabel);
+  container.appendChild(AccCombobox);
+  container.appendChild(OrbLabel);
+  container.appendChild(Orb1Combobox);
+  container.appendChild(Orb2Combobox);
+  container.appendChild(Orb3Combobox);
+  container.appendChild(Orb4Combobox);
+  container.appendChild(Orb5Combobox);
+  // Append the main container to the body
+  document.body.appendChild(container);
     }
   </script>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .combobox {
+      width: 150px;
+      height: 30px;
+      margin: 10px;
+    }
+    .textbox {
+      width: 300px;
+      height: 30px;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
   <input type="file" onchange="readFile(this)">
-  <br><br>
-  <textarea id="binData" readonly></textarea>
+    <script>
+      createBox(1)
+      createBox(2)
+    </script>
 </body>
 </html>

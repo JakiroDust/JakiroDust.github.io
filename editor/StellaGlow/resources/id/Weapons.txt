@@ -1,0 +1,252 @@
+Sword (Alto)
+64 00 ~ Hunter's Sword ~ PATK+2 MATK+1 ACC90 SLOT x1
+65 00 ~ Short Sword ~ PATK+4 MATK+2 ACC80 SLOT x1
+66 00 ~ Plated Sword ~ PATK+6 MATK+3 ACC80 SLOT x1
+67 00 ~ Steel Sword ~ PATK+9 MATK+5 ACC80 SLOT x1
+68 00 ~ Black Sword ~ PATK+12 MATK+6 ACC80 SLOT x2
+69 00 ~ Sword Breaker ~ PATK+15 MATK+8 ACC80 SLOT x2
+6A 00 ~ Bastard Sword ~ PATK+18 MATK+9 ACC80 SLOT x2
+6B 00 ~ [Unnamed] ~ ACC80 SLOT x2
+6C 00 ~ Dainsleif ~ PATK+22 MATK+11 ACC80 SLOT x3
+6D 00 ~ Anastasia ~ PATK+26 MATK+13 ACC80 SLOT x4
+6E 00 ~ Orb Meister ~ PATK+5 MATK+2 ACC80 SLOT x2
+6F 00 ~ [Unnamed] ~ ACC80 SLOT x2
+70 00 ~ Strong Edge ~ PATK+12 MATK+5 ACC95 SLOT x1
+71 00 ~ [Unnamed] ~ ACC80 SLOT x2 (Follow Up Orb)
+72 00 ~ Triple Edge ~ PATK+17 MATK+8 ACC90 SLOT x3
+73 00 ~ Ice Shiva ~ PATK+20 MATK+10 ACC90 SLOT x3 (Freeze Orb)
+74 00 ~ [Unnamed] ~ ACC80 SLOT x2
+75 00 ~ Blood Sword ~ PATK+28 MATK+14 ACC75 SLOT x4 (Drain Orb)
+76 00 ~ [Unnamed] ~ ACC80 SLOT x3
+77 00 ~ [Unnamed] ~ PATK+22 MATK+11 ACC80 SLOT x3
+78 00 ~ [Unnamed] ~ ACC80 SLOT x3
+79 00 ~ [Unnamed] ~ ACC80 SLOT x3
+7A 00 ~ [Unnamed] ~ ACC80 SLOT x4
+7B 00 ~ [Unnamed] ~ ACC80 SLOT x4
+7C 00 ~ Sword of Light ~ PATK+18 MATK+9 ACC50 SLOT x5 (Critical Orb, Critical Orb 2, Critical Orb 3)
+7D 00 ~ Baton Sword ~ PATK+30 MATK+15 ACC80 SLOT x5
+
+Staff (Lisette, Veronica)
+20 03 ~ Shell Staff ~ PATK+2 MATK+5 ACC85 SLOT x1
+21 03 ~ Wood Staff ~ PATK+2 MATK+6 ACC75 SLOT x1
+22 03 ~ Craft Staff ~ PATK+3 MATK+8 ACC75 SLOT x1
+23 03 ~ Clover Staff ~ PATK+4 MATK+10 ACC75 SLOT x1
+24 03 ~ Magical Staff ~ PATK+6 MATK+12 ACC75 SLOT x2
+25 03 ~ Jack-o'-lantern ~ PATK+8 MATK+15 ACC75 SLOT x2
+26 03 ~ Crystal Staff ~ PATK+9 MATK+18 ACC75 SLOT x2
+27 03 ~ [Unnamed] ~ ACC75 SLOT x2
+28 03 ~ Magic Stick ~ PATK+12 MATK+23 ACC85 SLOT x3
+29 03 ~ Hollow Staff ~ PATK+11 MATK+22 ACC75 SLOT x3
+2A 03 ~ Starmine ~ PATK+13 MATK+26 ACC75 SLOT x4
+2B 03 ~ Debut Staff ~ PATK+2 MATK+7 ACC85 SLOT x2
+2C 03 ~ [Unnamed] ~ ACC75 SLOT x2 (Attack Orb 3)
+2D 03 ~ Friendly Staff ~ PATK+4 MATK+11 ACC85 SLOT x2 (Ally Orb)
+2E 03 ~ [Unnamed] ~ ACC75 SLOT x2 (Follow Up Orb)
+2F 03 ~ Stealth Staff ~ PATK+8 MATK+15 ACC85 SLOT x3 (Hermit Orb 2)
+30 03 ~ [Unnamed] ~ ACC75 SLOT x2 (Attack Orb 3)
+31 03 ~ [Unnamed] ~ ACC75 SLOT x3
+32 03 ~ Spectrum ~ PATK+14 MATK+28 ACC85 SLOT x4 (Follow Up Orb)
+33 03 ~ Yggdrasil Staff ~ PATK+15 MATK+29 ACC100 SLOT x3 (Freeze Orb 2)
+34 03 ~ Twig ~ PATK+2 MATK+5 ACC75 SLOT x1
+35 03 ~ [Unnamed] ~ PATK+6 MATK+12 ACC1000 SLOT x3 (Absorb Orb 3)
+36 03 ~ [Unnamed] ~ ACC75 SLOT x3
+37 03 ~ [Unnamed] ~ ACC75 SLOT x4
+38 03 ~ Cat Paw ~ PATK+11 MATK+21 ACC75 SLOT x2 (Thief Orb 3)
+39 03 ~ Ecthelion ~ PATK+15 MATK+30 ACC75 SLOT x5
+3A 03 ~ Caduceus ~ PATK+15 MATK+30 ACC75 SLOT x5
+
+Lance (Klaus, Dante)
+2C 01 ~ Noble Lance ~ PATK+4 MATK+1 ACC90 SLOT x2
+2D 01 ~ [Unnamed] ~ ACC80 SLOT x1
+2E 01 ~ Bronze Spear ~ PATK+6 MATK+2 ACC80 SLOT x1
+2F 01 ~ Steel Spear ~ PATK+9 MATK+2 ACC80 SLOT x1
+30 01 ~ Armor Spear ~ PATK+12 MATK+3 ACC80 SLOT x2
+31 01 ~ Battle Lance ~ PATK+15 MATK+3 ACC80 SLOT x2
+32 01 ~ Titan Spear ~ PATK+18 MATK+4 ACC80 SLOT x2
+33 01 ~ [Unnamed] ~ ACC80 SLOT x2
+34 01 ~ Virgil ~ PATK+21 MATK+4 ACC90 SLOT x2
+35 01 ~ Trident ~ PATK+22 MATK+4 ACC80 SLOT x3
+36 01 ~ Gungnir ~ PATK+26 MATK+5 ACC80 SLOT x4
+37 01 ~ [Unnamed] ~ ACC80 SLOT x2
+38 01 ~ Venom Lance ~ PATK+6 MATK+2 ACC90 SLOT x2 (Venom Orb)
+39 01 ~ Megadeath ~ PATK+11 MATK+2 ACC90 SLOT x2 (Giant Orb)
+3A 01 ~ Trip Lance ~ PATK+14 MATK+4 ACC90 SLOT x2 (Misery Orb)
+3B 01 ~ [Unnamed] ~ ACC80 SLOT x3 (Corner Orb)
+3C 01 ~ [Unnamed] ~ ACC80 SLOT x2 (Sickness Orb 3)
+3D 01 ~ [Unnamed] ~ ACC80 SLOT x2
+3E 01 ~ Faust ~ PATK+28 MATK+6 ACC90 SLOT x4 (Seal Orb 2)
+3F 01 ~ [Unnamed] ~ ACC90 SLOT x4 (Quick Orb 2)
+40 01 ~ [Unnamed] ~ ACC80 SLOT x3
+41 01 ~ [Unnamed] ~ ACC80 SLOT x3
+42 01 ~ [Unnamed] ~ PATK+2 MATK+1 ACC80 SLOT x2
+43 01 ~ [Unnamed] ~ PATK+35 MATK+10 ACC80 SLOT x5
+44 01 ~ Bamboo Spear ~ PATK+21 ACC80 SLOT x4 (Desperate Orb, Desperate Orb 2, Desperate Orb 3)
+45 01 ~ Longinus ~ PATK+35 MATK+10 ACC80 SLOT x5
+46 01 ~ Beatrice ~ PATK+30 MATK+10 ACC90 SLOT x5
+47 01 ~ [Unnamed] ~ PATK+2 MATK+1 ACC100 SLOT x1
+48 01 ~ [Unnamed] ~ PATK+12 MATK+1 ACC80 SLOT x4
+
+Knife (Rusty, Nonoka)
+90 01 ~ Khukuri ~ PATK+4 MATK+2 ACC95 SLOT x1
+91 01 ~ [Unnamed] ~ ACC85 SLOT x1
+92 01 ~ Survival Knife ~ PATK+6 MATK+3 ACC85 SLOT x1
+93 01 ~ Steel Knife ~ PATK+9 MATK+4 ACC85 SLOT x1
+94 01 ~ Seppukumaru ~ PATK+10 MATK+5 ACC95 SLOT x2
+95 01 ~ Assassin Knife ~ PATK+12 MATK+6 ACC85 SLOT x2
+96 01 ~ Sesshomaru ~ PATK+15 MATK+8 ACC85 SLOT x2
+97 01 ~ Caricature ~ PATK+18 MATK+9 ACC85 SLOT x2
+98 01 ~ [Unnamed] ~ ACC85 SLOT x2
+99 01 ~ Khanjar ~ PATK+22 MATK+11 ACC85 SLOT x3
+9A 01 ~ Kotetsu ~ PATK+26 MATK+13 ACC85 SLOT x4
+9B 01 ~ [Unnamed] ~ ACC85 SLOT x2
+9C 01 ~ Venom Khukuri ~ PATK+6 MATK+3 ACC95 SLOT x2 (Venom Orb)
+9D 01 ~ Paralysis Edge ~ PATK+11 MATK+4 ACC95 SLOT x2 (Paralysis Orb)
+9E 01 ~ [Unnamed] ~ ACC85 SLOT x3
+9F 01 ~ Kyushumaru ~ PATK+15 MATK+8 ACC95 SLOT x3 (Drain Orb)
+A1 01 ~ Lady Joker ~ PATK+24 MATK+12 ACC95 SLOT x3 (Assassin Orb 2)
+A2 01 ~ Irukamaru ~ PATK+28 MATK+14 ACC95 SLOT x4 (Sleep Orb 2)
+A3 01 ~ [Unnamed] ~ ACC85 SLOT x3
+A4 01 ~ [Unnamed] ~ ACC85 SLOT x3
+A5 01 ~ [Unnamed] ~ ACC85 SLOT x3
+A6 01 ~ [Unnamed] ~ ACC85 SLOT x4
+A7 01 ~ [Unnamed] ~ ACC85 SLOT x4
+A8 01 ~ BBQ Skewer ~ PATK+18 MATK+9 ACC85 SLOT x5 (Burn Orb, Burn Orb 2, Chase Orb, Chase Orb 2, Chase Orb 3)
+A9 01 ~ Meta-Fiction ~ PATK+32 MATK+14 ACC85 SLOT x5
+AA 01 ~ Kunai ~ PATK+30 MATK+25 ACC85 SLOT x5
+
+Fist (Archibald)
+F4 01 ~ Heirloom Fist ~ PATK+5 ACC100 SLOT x1
+F5 01 ~ [Unnamed] ~ ACC95 SLOT x1
+F6 01 ~ Field Fist ~ PATK+11 ACC95 SLOT x1
+F7 01 ~ Bronze Fist ~ PATK+14 ACC95 SLOT x1
+F8 01 ~ Royal Fist ~ PATK+17 ACC95 SLOT x2
+F9 01 ~ Steel Fist ~ PATK+20 ACC95 SLOT x2
+FA 01 ~ Prototype Fist ~ PATK+23 ACC95 SLOT x2
+FB 01 ~ [Unnamed] ~ ACC95 SLOT x1
+FC 01 ~ Alloy Fist ~ PATK+27 ACC95 SLOT x3
+FD 01 ~ Arondight ~ PATK+31 ACC95 SLOT x4
+FE 01 ~ [Unnamed] ~ ACC95 SLOT x2
+FF 01 ~ Dual Fist ~ PATK+11 ACC100 SLOT x2
+00 02 ~ [Unnamed] ~ ACC95 SLOT x2
+01 02 ~ Stun Fist ~ PATK+17 ACC100 SLOT x2 (Stun Orb)
+02 02 ~ [Unnamed] ~ ACC100 SLOT x3 (Dispel Orb)
+03 02 ~ [Unnamed] ~ ACC95 SLOT x2
+04 02 ~ Reboot Fist ~ PATK+27 ACC100 SLOT x2 (Follow Up Orb)
+05 02 ~ [Unnamed] ~ ACC95 SLOT x3
+06 02 ~ Freeze Fist ~ PATK+33 ACC100 SLOT x4 (Stop Orb 2)
+07 02 ~ [Unnamed] ~ ACC95 SLOT x2
+08 02 ~ [Unnamed] ~ ACC95 SLOT x3
+09 02 ~ [Unnamed] ~ ACC95 SLOT x3
+0A 02 ~ [Unnamed] ~ ACC95 SLOT x4
+0B 02 ~ [Unnamed] ~ ACC95 SLOT x4
+0C 02 ~ Sushi Fist ~ PATK+35 ACC30 SLOT x4
+0D 02 ~ God Hand ~ PATK+35 ACC95 SLOT x5
+
+Rifle (Ewan, Mordimort)
+BC 02 ~ Rifle ~ PATK+11 MATK+5 ACC90 SLOT x1
+BD 02 ~ [Unnamed] ~ ACC80 SLOT x1
+BE 02 ~ Stock Rifle ~ PATK+14 MATK+8 ACC80 SLOT x1
+BF 02 ~ Travel Rifle ~ PATK+17 MATK+11 ACC80 SLOT x2
+C0 02 ~ Desert Condor ~ PATK+18 MATK+13 ACC90 SLOT x2
+C1 02 ~ Gulf Shot ~ PATK+20 MATK+14 ACC80 SLOT x2
+C2 02 ~ Full Metal ~ PATK+23 MATK+17 ACC80 SLOT x2
+C3 02 ~ [Unnamed] ~ ACC80 SLOT x2
+C4 02 ~ R & B ~ PATK+27 MATK+21 ACC80 SLOT x3
+C5 02 ~ Lohengrin ~ PATK+31 MATK+25 ACC80 SLOT x4
+C6 02 ~ Hunter's Rifle ~ PATK+11 MATK+5 ACC90 SLOT x2 (Luck Orb)
+C7 02 ~ [Unnamed] ~ ACC80 SLOT x2
+C8 02 ~ Clear Shooter ~ PATK+17 MATK+11 ACC90 SLOT x2 (Dispel Orb)
+C9 02 ~ [Unnamed] ~ ACC80 SLOT x3
+CA 02 ~ Burn Out ~ PATK+25 MATK+18 ACC90 SLOT x3 (Burn Orb 2)
+CB 02 ~ [Unnamed] ~ ACC80 SLOT x3
+CC 02 ~ Downer Shot ~ PATK+33 MATK+26 ACC90 SLOT x4 (Soft Orb 2)
+CD 02 ~ [Unnamed] ~ ACC80 SLOT x3
+CE 02 ~ Gleipnir ~ PATK+34 MATK+27 ACC100 SLOT x3
+CF 02 ~ [Unnamed] ~ PATK+17 MATK+11 ACC100 SLOT x1 (Mud Orb)
+D0 02 ~ Black Out ~ PATK+33 MATK+26 ACC90 SLOT x1 (Sleep Orb 3)
+D1 02 ~ [Unnamed] ~ ACC80 SLOT x3
+D2 02 ~ [Unnamed] ~ ACC80 SLOT x4
+D3 02 ~ [Unnamed] ~ ACC80 SLOT x4
+D4 02 ~ Bamboo Gun ~ PATK+26 MATK+21 ACC80 SLOT x3 (Sickness Orb 3, Hunter Orb 2)
+D5 02 ~ Dominion ~ PATK+35 MATK+30 ACC80 SLOT x5
+D6 02 ~ Millionaire ~ PATK+35 ACC80 SLOT x5
+
+Bow (Popo, Keith)
+58 02 ~ Handmade Bow ~ PATK+2 MATK+2 ACC90 SLOT x1
+59 02 ~ Hunter's Bow ~ PATK+9 MATK+9 ACC80 SLOT x1
+5A 02 ~ Autumn Bow  ~ PATK+12 MATK+12 ACC80 SLOT x2
+5B 02 ~ King's Bow ~ PATK+13 MATK+13 ACC90 SLOT x2
+5C 02 ~ Fairy Bow ~ PATK+15 MATK+15 ACC80 SLOT x2
+5D 02 ~ Eagle Eye ~ PATK+18 MATK+18 ACC80 SLOT x2
+5E 02 ~ [Unnamed] ~ ACC80 SLOT x4
+5F 02 ~ Azusa Yumi ~ PATK+22 MATK+22 ACC80 SLOT x3
+60 02 ~ Dragon Breath ~ PATK+26 MATK+26 ACC80 SLOT x4
+61 02 ~ Poison Bow ~ PATK+9 MATK+9 ACC90 SLOT x2 (Venom Orb)
+62 02 ~ Tribow ~ PATK+15 MATK+15 ACC90 SLOT x3
+63 02 ~ [Unnamed] ~ ACC80 SLOT x3
+64 02 ~ Slumber Bow ~ PATK+20 MATK+20 ACC90 SLOT x3 (Sleep Orb)
+65 02 ~ [Unnamed] ~ ACC80 SLOT x3
+66 02 ~ Nail Bow ~ PATK+28 MATK+28 ACC90 SLOT x4 (Heavy Orb 2)
+67 02 ~ [Unnamed] ~ ACC80 SLOT x3
+68 02 ~ Tristan ~ PATK+29 MATK+29 ACC100 SLOT x3 (Paralyze Orb 2)
+69 02 ~ [Unnamed] ~ PATK+12 MATK+12 ACC100 SLOT x1 (Storm Orb)
+6A 02 ~ [Unnamed] ~ ACC80 SLOT x3
+6B 02 ~ [Unnamed] ~ ACC80 SLOT x1
+6C 02 ~ [Unnamed] ~ ACC80 SLOT x3
+6D 02 ~ [Unnamed] ~ ACC80 SLOT x3
+6E 02 ~ [Unnamed] ~ ACC80 SLOT x4
+6F 02 ~ [Unnamed] ~ ACC80 SLOT x4
+70 02 ~ Magical Cute ~ PATK+21 MATK+21 ACC80 SLOT x3 (Giant Orb 2)
+71 02 ~ Artemis ~ PATK+30 MATK+30 ACC80 SLOT x5
+72 02 ~ Holy Kingdom ~ PATK+33 ACC80 SLOT x5
+
+Katana (Sakuya, Dorothy)
+C8 00 ~ Tachi ~ PATK+14 MATK+14 ACC95 SLOT x1
+C9 00 ~ [Unnamed] ~ ACC85 SLOT x1
+CA 00 ~ Kagechiyo ~ PATK+17 MATK+17 ACC85 SLOT x2
+CB 00 ~ Kiki Ichimonji ~ PATK+20 MATK+20 ACC85 SLOT x2
+CC 00 ~ Arachne ~ PATK+23 MATK+23 ACC85 SLOT x2
+CD 00 ~ [Unnamed] ~ ACC85 SLOT x1
+CE 00 ~ Muramasa ~ PATK+26 MATK+26 ACC95 SLOT x3
+CF 00 ~ Onikirimaru ~ PATK+27 MATK+27 ACC85 SLOT x3
+D0 00 ~ Marakumo ~ PATK+31 MATK+31 ACC85 SLOT x4
+D1 00 ~ Tokinagare Ju ~ PATK+17 MATK+17 ACC95 SLOT x2 (Delay Orb)
+D2 00 ~ Hanbei ~ PATK+20 MATK+20 ACC95 SLOT x3 (Stun Orb)
+D3 00 ~ [Unnamed] ~ ACC85 SLOT x2
+D4 00 ~ Hotenko Ugachi ~ PATK+27 MATK+27 ACC95 SLOT x3 (Sickness Orb 2)
+D5 00 ~ Kusanagi ~ PATK+32 MATK+32 ACC95 SLOT x4 (Assassin Orb 2)
+D6 00 ~ [Unnamed] ~ ACC85 SLOT x4
+D7 00 ~ Kaede ~ PATK+34 MATK+34 ACC100 SLOT x3 (Burn Orb 2)
+D8 00 ~ [Unnamed] ~ PATK+17 MATK+17 ACC100 SLOT x1 (Flame Orb)
+DA 00 ~ [Unnamed] ~ ACC85 SLOT x1
+DB 00 ~ [Unnamed] ~ ACC85 SLOT x1
+DC 00 ~ [Unnamed] ~ ACC85 SLOT x3
+DD 00 ~ [Unnamed] ~ ACC85 SLOT x3
+DE 00 ~ [Unnamed] ~ ACC85 SLOT x4
+DF 00 ~ [Unnamed] ~ ACC85 SLOT x4
+E0 00 ~ Shinai ~ PATK+26 MATK+26 ACC85 SLOT x4 (Assassin Orb, Hermit Orb, Hit Orb)
+E1 00 ~ Sakuya ~ PATK+34 MATK+34 ACC85 SLOT x5
+E2 00 ~ Dorothy ~ PATK+35 ACC95 SLOT x5
+E3 00 ~ [Unnamed] ~ ACC85 SLOT x5
+E4 00 ~ Sensu ~ ACC85 SLOT x5
+
+Scythe (Hilda)
+84 03 ~ Harpe ~ PATK+22 MATK+22 ACC90 SLOT x2
+85 03 ~ Deathscythe ~ PATK+26 MATK+26 ACC80 SLOT x3
+86 03 ~ Skull Scythe ~ PATK+30 MATK+30 ACC80 SLOT x4
+87 03 ~ [Unnamed] ~ ACC80 SLOT x3
+88 03 ~ Venom Scythe ~ PATK+32 MATK+32 ACC90 SLOT x4 (Venom Orb 2)
+8A 03 ~ [Unnamed] ~ ACC80 SLOT x4 (Absorb Orb 2)
+8B 03 ~ [Unnamed] ~ ACC80 SLOT x4 (Drain Orb 2)
+8C 03 ~ [Unnamed] ~ ACC80 SLOT x4 (Paralyze Orb 2)
+8D 03 ~ [Unnamed] ~ ACC80 SLOT x4 (Freeze Orb 2)
+8E 03 ~ [Unnamed] ~ ACC80 SLOT x1
+8F 03 ~ Mic Stand ~ PATK+21 MATK+21 ACC80 SLOT x1 (Song Orb 3)
+90 03 ~ Memento Mori ~ PATK+33 MATK+33 ACC80 SLOT x5
+B7 03 ~ [Unnamed] ~ PATK+22 MATK+22 ACC100 SLOT x2
+B8 03 ~ [Unnamed] ~ PATK+22 MATK+22 ACC100 SLOT x2
+
+CPU (Giselle)
+E8 03 ~ CPU-8 ~ PATK+26 ACC95 SLOT x3
+B9 03 ~ CPU-64 ~ PATK+30 ACC85 SLOT x5
+EA 03 ~ [Unnamed] ~ ACC80 SLOT x4
