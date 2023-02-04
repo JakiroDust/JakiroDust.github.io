@@ -79,44 +79,32 @@ function handleFileSelect(data) {
 
 function applyChange(org,data)
 {
-  let temp=org,org_array=[];
-  let org_length=org.length;
-  for (let i=0;i<org_length;i++)
-  {
-  org_array.push(org[i])
-  }
-  org=org_array
   let characters_values = ['Status','Level','Experience Points','Weapon','Armor', 'Accessory','Item 1','Item 2','Weapon Orb 1','Weapon Orb 2','Weapon Orb 3','Weapon Orb 4','Weapon Orb 5' ];
   let characters_list = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
-  org.splice(32,1,reverse_bin_reader(data['ClearCount'],1));
-  org.splice(68,1,reverse_bin_reader(data['Chapter'],1))
-  org.splice(72,1,reverse_bin_reader(data['Chapter phase'],1))
-  org.splice(96,4,...reverse_bin_reader(data['Money'],4))
+  org.set(reverse_bin_reader(data['ClearCount'],1),32);
+  org.set(reverse_bin_reader(data['Chapter'],1),68)
+  org.set(reverse_bin_reader(data['Chapter phase'],1),72)
+  org.set(reverse_bin_reader(data['Money'],4),96)
   let start_point = 140
-  for( let character in characters_list.values())
+  for( let character of characters_list.values())
   {
-    org.splice(start_point,1,reverse_bin_reader(data[character]['Status'],1));start_point+=4;
-    org.splice(start_point,1,reverse_bin_reader(data[character]['Level'],1));start_point+=1;
-    org.splice(start_point,1,reverse_bin_reader(data[character]['Experience Points'],1));start_point+=5;
+    org.set(reverse_bin_reader(data[character]['Status'],1),start_point);start_point+=4;
+    org.set(reverse_bin_reader(data[character]['Level'],1),start_point);start_point+=1;
+    org.set(reverse_bin_reader(data[character]['Experience Points'],1),start_point);start_point+=5;
 
-    for (let value in characters_values.slice(3))
+    for (let value of characters_values.slice(3))
     {
-      org.splice(start_point,2,...reverse_bin_reader(data[character][value],2));start_point+=2;
+      console.log(value,'aaa')
+      org.set(reverse_bin_reader(data[character][value],2),start_point);start_point+=2;
     }
   }
-  let org_new=""
-  for (let i=0;i<org_length;i++)
-  {
-  org_new+=org[i]
-  }
-  org=org_new
-  //navigator.clipboard.writeText(org)
+
 return org
 }
 function save(filename, org,data) {
- let new_org=org//applyChange(org,data)
- console.log(new_org)
- const blob = new Blob([new_org],{ type: 'application/octet-stream' });
+ let new_org=applyChange(org,data)
+
+ const blob = new Blob([new_org.buffer],{ type: 'application/octet-stream' });
   if(window.navigator.msSaveOrOpenBlob) {
       window.navigator.msSaveBlob(blob, filename);
   } 

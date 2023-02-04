@@ -13,10 +13,91 @@
     dict2Bin=save
   </script>
   <script>
+    function hexToDecimal(hexString) 
+{
+  if(hexString.length==4)
+  {
+    hexString = hexString.slice(2,4)+hexString.slice(0,2)
+  }
+  let decimal = 0;
+  for (let i = 0; i < hexString.length; i++) 
+  {
+      let hexDigit = hexString[i];
+      let decimalDigit = parseInt(hexDigit, 16);
+      decimal += decimalDigit * Math.pow(16, hexString.length - i - 1);
+
+  }
+  return decimal;
+}
     function loadfromFile(dicts)
     {
-      document.getElementById("Money").value  = dicts['Money']
-    }
+      document.getElementById("Money0").value  = dicts['Money']
+      document.getElementById("NG").checked = (dicts['ClearCount']!=0)
+
+      for (var i =1;i<=16;i++ )
+      {
+        document.getElementById(`StatusCombobox${i}`).value=dicts[`${i}`]['Status']
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        document.getElementById(`LevelText${i}`).value=dicts[`${i}`]['Level']
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        document.getElementById(`WeaponCombobox${i}`).value=dicts[`${i}`]['Weapon']
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        document.getElementById(`ArmorCombobox${i}`).value=dicts[`${i}`]['Armor']
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        document.getElementById(`AccCombobox${i}`).value=dicts[`${i}`]['Accessory']
+      }
+      for (var i =1;i<=16;i++ )
+      { 
+        for(var j =1;j<=5;j++)
+        {
+        document.getElementById(`Orb${j}Combobox${i}`).value=dicts[`${i}`][`Weapon Orb ${j}`]
+        }
+      }
+    };
+    function updateDicts(dicts)
+    {
+      dicts['Money']=  document.getElementById("Money0").value  
+      dicts['ClearCount']=document.getElementById("NG").checked ? 1:0
+
+      for (var i =1;i<=16;i++ )
+      {
+        dicts[`${i}`]['Status']= document.getElementById(`StatusCombobox${i}`).value
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        dicts[`${i}`]['Level'] = document.getElementById(`LevelText${i}`).value
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        
+        dicts[`${i}`]['Weapon']=document.getElementById(`WeaponCombobox${i}`).value
+        console.log(document.getElementById(`WeaponCombobox${i}`).value)
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        dicts[`${i}`]['Armor']= document.getElementById(`ArmorCombobox${i}`).value
+      }
+      for (var i =1;i<=16;i++ )
+      {
+        dicts[`${i}`]['Accessory']= document.getElementById(`AccCombobox${i}`).value
+      }
+      for (var i =1;i<=16;i++ )
+      { 
+        for(var j =1;j<=5;j++)
+        {
+          dicts[`${i}`][`Weapon Orb ${j}`]=  document.getElementById(`Orb${j}Combobox${i}`).value
+        }
+      }
+      return dicts
+    };
     function readFile(input) {
 
       if (input.files && input.files[0]) 
@@ -26,22 +107,22 @@
         reader.onload = function (e) {
           org=new Uint8Array(e.target.result)
           data = bin2Dict(org);
-        
-          //loadfromFile(data)
-          //return data
+          loadfromFile(data);
+
+          return data
       };
+        filename = input.files[0].name;
         reader.readAsArrayBuffer(input.files[0]);
 
       } 
     };
     
-    function createTextbox(id,input="5%")
+    function createTextbox(id,number,input="5%")
     {
       let cb= document.createElement("input");
       cb.style.width = input;
       cb.style.height = "60%";
-      cb.id=id;
-      cb.innerText="0"
+      cb.id=id+number
       return cb;
     };
     function loadComboboxOptions(combobox, file) {
@@ -56,10 +137,10 @@
             if (lines[i].length > 0) {
               var option = document.createElement("option");
               if (firstLine === "1") {
-                option.value = lines[i].substring(0, 2);
+                option.value = lines[i].substring(0, 2)
                 start_with=3;
               } else if (firstLine === "2") {
-                option.value = lines[i].substring(0, 4);
+                option.value =lines[i].substring(0, 4)
                 start_with = 5;
               }
               option.text = lines[i].substring(start_with);
@@ -68,6 +149,11 @@
                 option.disabled="true";
                 option.style.backgroundColor="#C8C8C8";
               }
+              else
+              {
+                option.value=hexToDecimal(option.value);
+              }
+              //option.value=hex2Dem(option.value);
               combobox.add(option);
             }
           }
@@ -76,13 +162,14 @@
       xhr.send();
     }
     
-    function createCombobox(id,filepath="none",input="10%")
+    function createCombobox(id,number,filepath="none",input="10%")
     {
 
      let cb= document.createElement("select");
      cb.style.width = input;
      cb.style.height = "10%";
-     cb.id=id;
+     cb.id=id+number;
+     cb.className=id;
      if (filepath != "none")
      {
       loadComboboxOptions(cb,filepath)
@@ -105,18 +192,18 @@
   //container.style.flexDirection="column";
   container.style.alignItems = "center";
   container.style.justifyContent = "space-between";
-  container.style.width = "30%";
+  container.style.width = "40%";
   container.style.height = "100%";
   container.style.border = "1px solid black";
   container.id= "box"+0
   container.className="box"
   container.style.padding="10px"
   //Create Label
-  var MoneyLabel=createLabel("Money")
+  var MoneyLabel=createLabel("Money",'10%')
   var NGlabel=createLabel("NG+")
-  var OrbChangeLabel=createLabel("Orb change when select wp")
+  var OrbChangeLabel=createLabel("Orb change when select wp",'200px')
   //Make obj
-  var MoneyText=createTextbox("Money","20%")
+  var MoneyText=createTextbox("Money",'0',"20%")
   //
   var NGTickbox=document.createElement("input")
   NGTickbox.type="checkbox"
@@ -165,17 +252,17 @@
 
 
   // Create the second combobox
-  var StatusCombobox = createCombobox('StatusCombobox',"./resources/id/SG_Characters.txt")
-  var ExpText=createTextbox('ExpText')
-  var LevelText=createTextbox('LevelText',)
-  var WeaponCombobox =createCombobox("WeaponCombobox","./resources/id/Weapons.txt")
-  var ArmorCombobox = createCombobox("ArmorCombobox","./resources/id/Armor.txt")
-  var AccCombobox=createCombobox("AccCombobox","./resources/id/Accessories.txt")
-  var Orb1Combobox = createCombobox("Orb1Combobox","./resources/id/Orbs.txt","5%")
-  var Orb2Combobox = createCombobox("Orb2Combobox","./resources/id/Orbs.txt","5%")
-  var Orb3Combobox = createCombobox("Orb3Combobox","./resources/id/Orbs.txt","5%")
-  var Orb4Combobox = createCombobox("Orb4Combobox","./resources/id/Orbs.txt","5%")
-  var Orb5Combobox = createCombobox("Orb5Combobox","./resources/id/Orbs.txt","5%")
+  var StatusCombobox = createCombobox('StatusCombobox',number,"./resources/id/SG_Characters.txt")
+  var ExpText=createTextbox('ExpText',number)
+  var LevelText=createTextbox('LevelText',number)
+  var WeaponCombobox =createCombobox("WeaponCombobox",number,"./resources/id/Weapons.txt")
+  var ArmorCombobox = createCombobox("ArmorCombobox",number,"./resources/id/Armor.txt")
+  var AccCombobox=createCombobox("AccCombobox",number,"./resources/id/Accessories.txt")
+  var Orb1Combobox = createCombobox("Orb1Combobox",number,"./resources/id/Orbs.txt","5%")
+  var Orb2Combobox = createCombobox("Orb2Combobox",number,"./resources/id/Orbs.txt","5%")
+  var Orb3Combobox = createCombobox("Orb3Combobox",number,"./resources/id/Orbs.txt","5%")
+  var Orb4Combobox = createCombobox("Orb4Combobox",number,"./resources/id/Orbs.txt","5%")
+  var Orb5Combobox = createCombobox("Orb5Combobox",number,"./resources/id/Orbs.txt","5%")
   // Append the comboboxes to the main container
   container.appendChild(StatusLabel);
   container.appendChild(StatusCombobox);
@@ -235,8 +322,7 @@
 <script>
   const button = document.getElementById("myButton");
   button.addEventListener("click", function() {
-    
-    var org_new= dict2Bin('SaveData0.bin',org,data)
+    var org_new= dict2Bin(filename,org,updateDicts(data));
   });
 </script>
 </body>
