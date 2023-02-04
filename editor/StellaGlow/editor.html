@@ -4,25 +4,37 @@
   <title>BIN File Reader</title>
 
 <script>
-  var bin2Dict,data
+  var bin2Dict,dict2Bin
+  var org,data,filename
 </script>
   <script type="module">
-    import {handleFileSelect } from "./bin2Dict.js";
+    import {handleFileSelect ,save} from "./bin2Dict.js";
     bin2Dict=handleFileSelect
+    dict2Bin=save
   </script>
   <script>
+    function loadfromFile(dicts)
+    {
+      document.getElementById("Money").value  = dicts['Money']
+    }
     function readFile(input) {
 
       if (input.files && input.files[0]) 
       {
         var reader = new FileReader();
+
         reader.onload = function (e) {
-          var data = bin2Dict(e.target.result);
-        };
-        reader.readAsBinaryString(input.files[0]);
+          org=new Uint8Array(e.target.result)
+          data = bin2Dict(org);
+        
+          //loadfromFile(data)
+          //return data
+      };
+        reader.readAsArrayBuffer(input.files[0]);
+
       } 
     };
-
+    
     function createTextbox(id,input="5%")
     {
       let cb= document.createElement("input");
@@ -54,6 +66,7 @@
               if(option.value=='XXXX' || option.value=='XX')
               {
                 option.disabled="true";
+                option.style.backgroundColor="#C8C8C8";
               }
               combobox.add(option);
             }
@@ -77,11 +90,11 @@
      return cb;
     };
 
-    function createLabel(input_string="default")
+    function createLabel(input_string="default",width="30px")
     {
      let label= document.createElement("label");
      label.innerText=input_string;
-     label.style.marginRight="1px";
+     label.style.width=width;
      return label
     };
 
@@ -100,7 +113,7 @@
   container.style.padding="10px"
   //Create Label
   var MoneyLabel=createLabel("Money")
-  var NGlabel=createLabel("NG")
+  var NGlabel=createLabel("NG+")
   var OrbChangeLabel=createLabel("Orb change when select wp")
   //Make obj
   var MoneyText=createTextbox("Money","20%")
@@ -123,7 +136,7 @@
 
     };
 
-    function createBox(number)
+    function createBox(number,name="Status")
     {
   // Create the main container
   var container = document.createElement("div");
@@ -141,11 +154,11 @@
   // Create the first combobox
 
   
-  var StatusLabel=createLabel("Status")
+  var StatusLabel=createLabel(name,"70px")
   var LevelLabel=createLabel("Level")
   var ExpLabel=createLabel("Exp")
-  var WeaponLabel=createLabel("Weapon")
-  var ArmorLabel=createLabel("Armor")
+  var WeaponLabel=createLabel("Weapon","50px")
+  var ArmorLabel=createLabel("Armor","40px")
   var AccLabel=createLabel("Acc")
   var OrbLabel=createLabel("orb")
 
@@ -186,6 +199,8 @@
   document.body.appendChild(container);
   return container;
     }
+    
+
   </script>
   <style>
     .container {
@@ -206,14 +221,23 @@
   </style>
 </head>
 <body>
-  <input type="file" onchange="readFile(this)">
+  <input type="file" accept=".bin" onchange="readFile(this)">
     <script>
     createInfobox();
-    for (i =0;i<14;i++)
+    var SG_Characters= ['Alto','Lisette','Klaus','Rusty','Archibald','Ewan','Popo','Nonoka','Sakuya','Keith','Mordimort','Dorothy','Dante','Hilda','Veronica','Giselle']
+    for (i =1;i<=16;i++)
     {
-      var temp =createBox(i)
+      var temp =createBox(i,SG_Characters[i-1])
     }
-    
     </script>
+    <button id="myButton">Click me</button>
+    <input type="text" id="outputtext" name="outputtext">
+<script>
+  const button = document.getElementById("myButton");
+  button.addEventListener("click", function() {
+    
+    var org_new= dict2Bin('SaveData0.bin',org,data)
+  });
+</script>
 </body>
 </html>

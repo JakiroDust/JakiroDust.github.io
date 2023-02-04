@@ -39,7 +39,7 @@ let OrbLabel=createLabel("orb")
 
 
 // Create the second combobox
-let StatusCombobox = createBox()
+let StatusCombobox = createCombobox()
 let ExpCombobox=document.createElement("input")
 ExpCombobox.style.width = "20%";
 ExpCombobox.style.height = "100%";
