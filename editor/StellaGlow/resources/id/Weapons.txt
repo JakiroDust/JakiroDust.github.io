@@ -112,7 +112,7 @@ A701-[Unnamed] ~ ACC85 SLOT x4
 A801-BBQ Skewer ~ PATK+18 MATK+9 ACC85 SLOT x5 (Burn Orb, Burn Orb 2, Chase Orb, Chase Orb 2, Chase Orb 3)
 A901-Meta-Fiction ~ PATK+32 MATK+14 ACC85 SLOT x5
 AA01-Kunai ~ PATK+30 MATK+25 ACC85 SLOT x5
-Fist (Archibald)
+XXXX-Fist (Archibald)
 F401-Heirloom Fist ~ PATK+5 ACC100 SLOT x1
 F501-[Unnamed] ~ ACC95 SLOT x1
 F601-Field Fist ~ PATK+11 ACC95 SLOT x1
